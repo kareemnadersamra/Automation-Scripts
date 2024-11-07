@@ -1,1 +1,1 @@
-Here, you can find Automation Scripts for Quantum Espresso and XCrySDen codes.
+Here, you can find Automation Scripts for Quantum Espresso and XCrySDen codes. More details are provided about each script through the README file inside each folder depending on your preferences and needs.
