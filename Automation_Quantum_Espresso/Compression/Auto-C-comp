@@ -95,7 +95,7 @@ mkdir $next_value
 
 cd $f
 
-path=/home/karimnadersamra/Paracetamol_QE/form2_PBE-D3_relax/Compc/$next_value
+path=/home/karimnadersamra/Compc/$next_value
 
 
 cp pw_compress$f%c.out  $path
@@ -110,7 +110,7 @@ index=$(( f - 31 | bc ))
 c_value=${method_values[$index]}
 
 #########             Needed INPUT	 ############################
-PP_DIR=/home/karimnadersamra/Paracetamol_QE/Pseudos
+PP_DIR=/home/karimnadersamra/Pseudos
 bands=256
 PWSCF=/shared/QE7.0_intel/qe-7.0/bin/pw.x
 ncpu=36
