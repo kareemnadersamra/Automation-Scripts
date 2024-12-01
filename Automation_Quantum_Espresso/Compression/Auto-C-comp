@@ -419,15 +419,15 @@ echo $f >> ../A_Strain.txt
 
 #############################For Poisson's Ratio##################################################                   
 
-grep -A 3 "SYSTEM" pw3-comp$f%a.in | tail -n -1| sed -n 's/.*    B =\([^)]*\).*/\1/p' > B_scratch.txt
+grep -A 3 "SYSTEM" pw3-comp$f%c.in | tail -n -1| sed -n 's/.*    B =\([^)]*\).*/\1/p' > B_scratch.txt
 SAA=`awk '{print $1}' < B_scratch.txt`
 echo $SAA >> ../B_Lattice.txt
 
-grep -A 2 "SYSTEM" pw3-comp$f%a.in | tail -n -1| sed -n 's/.*    A =\([^)]*\).*/\1/p' > A_scratch.txt
+grep -A 2 "SYSTEM" pw3-comp$f%c.in | tail -n -1| sed -n 's/.*    A =\([^)]*\).*/\1/p' > A_scratch.txt
 SAB=`awk '{print $1}' < A_scratch.txt`
 echo $SAB >> ../A_Lattice.txt
 
-grep -A 4 "SYSTEM" pw3-comp$f%a.in | tail -n -1| sed -n 's/.*    C =\([^)]*\).*/\1/p' > C_scratch.txt
+grep -A 4 "SYSTEM" pw3-comp$f%c.in | tail -n -1| sed -n 's/.*    C =\([^)]*\).*/\1/p' > C_scratch.txt
 SAC=`awk '{print $1}' < C_scratch.txt`
 echo $SAC >> ../C_Lattice.txt
 
